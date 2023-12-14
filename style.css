@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid pink; */
 
 }
 /* first nav */
@@ -47,29 +48,44 @@
     background-color:rgb(236,232,217) ;
 }
 .printivo nav{
-    /* border: 2px solid black; */
     display: flex;
     justify-content:space-around;
     width: 100%;
     padding: 0.5rem;
 }
-.printivo .nav2img li{
-    /* border: 2px solid red; */
+.printivo .printivo__img li{
     list-style-type: none;
     
+    
 }
-.printivo .nav2a {
-    /* border: 2px solid gray; */
+.printivo .all__product1{
+    display: flex;
+    gap: 4rem;
+}
+.printivo .all__product {
     list-style-type: none;
     display: flex;
     gap: 2rem;
     align-items: center;
 }
-.printivo .nav2a li:nth-child(5) a{
+.printivo .sign__in {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.printivo .sign__in li {
+    list-style-type: none;
+}
+.printivo .sign__in :nth-child(1) a{
     color: rgb(215,127,129);
+    text-decoration: none;
+}
+.printivo .sign__in :nth-child(2) a{
+    text-decoration: none;
+    color:rgb(123,113,131);
 }
 
-.printivo .nav2a a {
+.printivo .all__product a {
     text-decoration: none;
     font-size:1rem;
     color:rgb(123,113,131);
@@ -79,7 +95,6 @@
     margin-top: 5rem;
 }
 .quality{
-    /* border: 2px solid red; */
     flex-grow: 1;
     justify-content: center;
     margin-left:50px;
@@ -104,7 +119,6 @@ padding-bottom:2rem;
     font-family:sans-serif;
     }
 .hand{
-    /* border: 2px solid green; */
     width:30rem;
 }
 .searchicon{
@@ -112,7 +126,6 @@ padding-bottom:2rem;
     width:600px;
     height: 5rem;
     display: flex;
-    /* border: 2px solid red; */
 }
 .searchicon input{
 outline: 0;
@@ -128,8 +141,8 @@ padding-left: 1rem;
     color: rgb(129,140,155);
     cursor: pointer;
 }
-/* media query */
 
+/* media query */
 @media screen and (max-width:800px) {
     .container1 nav .cost__calculator {
         display: none;
@@ -139,6 +152,16 @@ padding-left: 1rem;
         display: flex;
         justify-content: space-between;
 
+    }
+    .printivo .all__product {
+        display: none;
+    }
+    .printivo .sign__in :nth-child(1) a{
+        font-size: 0.8rem;
+
+    }
+    .printivo .sign__in :nth-child(2) a{
+        display: none;
     }
 }
 @media screen and (max-width:640px){
@@ -163,5 +186,10 @@ padding-left: 1rem;
     
     .container1 nav ul{
         padding:0 25px;
+    }
+
+    .printivo .sign__in {
+        border: 2px solid rebeccapurple;
+        gap: 1rem;
     }
 }
