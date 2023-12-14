@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* first nav */
+.container1 nav{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.container1 nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.Nigerian{
+    display: flex;
+    border: 1px solid gray;
+    border-radius:1.4rem;
+    gap: .3rem;
+    padding:.4rem;
+    font-size: .8rem;
+}
+.container1 nav .need__help{
+    gap:5rem;
+    
+}
+.cost__calculator  a{
+    color:rgb(123,113,131);
+    text-decoration:none;
+}
+.need__help {
+    color:rgb(123,113,131);
+    font-size: 0.8rem;
+}
+.need__help li a{
+    color: rgb(29,161,242);
+    text-decoration: none;
+}
+
+/* nav2 */
+.printivo{
+    background-color:rgb(236,232,217) ;
+}
+.printivo nav{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    padding: 0.5rem;
+}
+.printivo .nav2img li{
+    /* border: 2px solid red; */
+    list-style-type: none;
+    
+}
+.printivo .nav2a {
+    /* border: 2px solid gray; */
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.printivo .nav2a li:nth-child(5) a{
+    color: rgb(215,127,129);
+}
+
+.printivo .nav2a a {
+    text-decoration: none;
+    font-size:1rem;
+    color:rgb(123,113,131);
+}
+.container2{
+    display: flex;
+    margin-top: 5rem;
+}
+.quality{
+    /* border: 2px solid red; */
+    flex-grow: 1;
+    justify-content: center;
+    margin-left:50px;
+}
+.container2 .quality h1{
+    color: rgb(56,74,98);
+    font-size:4.5rem;
+    font-family:sans-serif;
+    font-weight: 400;
+}
+.container2 .quality .p1{
+color: rgb(112,128,149);
+font-weight: 500;
+font-size:1.8rem;
+padding-bottom:2rem;
+}
+.container2 .quality .p2{
+    color: rgb(56,74,98);
+    font-size:1rem;
+    font-weight: 700;
+    font-weight:bold;
+    font-family:sans-serif;
+    }
+.hand{
+    /* border: 2px solid green; */
+    width:30rem;
+}
+.searchicon{
+    background-color: white;
+    width:600px;
+    height: 5rem;
+    display: flex;
+    /* border: 2px solid red; */
+}
+.searchicon input{
+outline: 0;
+border: 0;
+flex-grow: 1;
+font-size: 20px;
+padding-left: 1rem;
+}
+.fa-magnifying-glass{
+    background-color:white;
+    align-self: center;
+    padding: 1rem;
+    color: rgb(129,140,155);
+    cursor: pointer;
+}
+/* media query */
+
+@media screen and (max-width:800px) {
+    .container1 nav .cost__calculator {
+        display: none;
+    }
+    .container1 nav .need__help{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+@media screen and (max-width:640px){
+    .need__help1 span{
+        display: none;
+    }
+    .container1 nav ul{
+        padding:0 15px;
+    }
+    .container1 nav .need__help{
+        gap:1rem;
+    }
+    .Nigerian{
+        border-radius:1rem;
+        gap: .4rem;
+        padding:.4rem;
+        font-size: .8rem;
+            }
+}
+
+@media screen and (max-width:475px){
+    
+    .container1 nav ul{
+        padding:0 25px;
+    }
+}

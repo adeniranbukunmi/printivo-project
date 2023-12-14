@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1 nav{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.container1 nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.Nigerian{
+    display: flex;
+    border: 1px solid gray;
+    border-radius:20px;
+    gap: .3rem;
+    padding:.4rem;
+    font-size: .8rem;
+}
+.container1 nav ul:last-child{
+    gap:5rem;
+}
+.firstlist  a{
+    color:rgb(123,113,131);
+    text-decoration:none;
+}
+.secondlist {
+    color:rgb(123,113,131);
+}
+.secondlist li a{
+    color: rgb(29,161,242);
+    text-decoration: none;
+}
+.printivo{
+    background-color:rgb(236,232,217) ;
+}
+.printivo nav{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    padding: 0.5rem;
+}
+.printivo .nav2img li{
+    /* border: 2px solid red; */
+    list-style-type: none;
+    
+}
+.printivo .nav2a {
+    /* border: 2px solid gray; */
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.printivo .nav2a li:nth-child(5) a{
+    color: rgb(215,127,129);
+}
+
+.printivo .nav2a a {
+    text-decoration: none;
+    font-size:1rem;
+    color:rgb(123,113,131);
+}
+.container2{
+    display: flex;
+    margin-top: 5rem;
+}
+.quality{
+    /* border: 2px solid red; */
+    flex-grow: 1;
+    justify-content: center;
+    margin-left:50px;
+}
+.container2 .quality h1{
+    color: rgb(56,74,98);
+    font-size:4.5rem;
+    font-family:sans-serif;
+    font-weight: 400;
+}
+.container2 .quality .p1{
+color: rgb(112,128,149);
+font-weight: 500;
+font-size:1.8rem;
+padding-bottom:2rem;
+}
+.container2 .quality .p2{
+    color: rgb(56,74,98);
+    font-size:1rem;
+    font-weight: 700;
+    font-weight:bold;
+    font-family:sans-serif;
+    }
+.hand{
+    /* border: 2px solid green; */
+    width:30rem;
+}
+.searchicon{
+    background-color: white;
+    width:600px;
+    height: 5rem;
+    display: flex;
+    /* border: 2px solid red; */
+}
+.searchicon input{
+outline: 0;
+border: 0;
+flex-grow: 1;
+font-size: 20px;
+padding-left: 1rem;
+}
+.fa-magnifying-glass{
+    background-color:white;
+    align-self: center;
+    padding: 1rem;
+    color: rgb(129,140,155);
+    cursor: pointer;
+}
+.marquee{
+    height: 5rem;
+    background-color: rgb(243,177,205);
+    position: relative;
+    color: black;
+    /* border: 1px solid black; */
+}
+.marquee p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top:30px;
+}
+.pop{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid yellow; */
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-top:2rem;
+}
+.pop a{
+    text-decoration: none;
+    color: rgb(215,127,129);
+}
+.container3{
+    /* border: 2px solid yellow; */
+    margin: 0 5rem;
+}
+.cards{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+    
+}
+.cards1{
+    /* border: 2px solid yellow; */
+    width: 17.16rem;
+    height: 26rem;
+    
+}
+.cards1 .imag{
+    /* border: 2px solid red; */
+    height: 12rem;
+}
+.one {
+    background-image:url(images/twosided1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.two {
+    background-image:url(images/A5\ \ flyer1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.three {
+    background-image:url(images/roundsticker1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.four  {
+    background-image:url(images/simple\ mug1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.five {
+    background-image:url(images/post\ card1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.six  {
+    background-image:url(images/roll\ up\ banner1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.seven {
+    background-image:url(images/A2\ poster1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.eight  {
+    background-image:url(images/Trifold\ broch1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.nine {
+    background-image:url(images/landscape\ id1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ten {
+    background-image:url(images/off\ white\ t-shirt1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.eleven {
+    background-image:url(images/A4\ branded\ bag1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.twelve {
+    background-image:url(images/A4\ courier\ bag1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.thirteen {
+    background-image:url(images/greetingcard1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fourteen {
+    background-image:url(images/1473165427_stickers.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cards1 .bizcards{
+    padding: 1rem;
+}
+.cards1 .bizcards h3{
+    padding-bottom:2rem;
+    color: rgb(100,83,98);
+    font-size: 1.2rem;
+}
+.cards1 .bizcards p{
+    padding-bottom: 0.8rem;
+    color: rgb(162,166,180);
+    font-size: 0.8rem;
+    font-weight:bolder;
+}
+.cards1 .bizcards h3:last-child{
+    color:rgb(56,74,98);
+    font-size: 1.5rem;
+    padding-bottom: 0;
+}
+.cards1 .bizcards h3:last-child span{
+    font-size:1.2rem;
+    color: rgb(162,166,180);
+}
+.cards1  a{
+    padding: 0.7rem;
+    background-color:rgb(215,127,129);
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin:0.5rem 1rem;
+    display: inline-block;
+}
+.container4{
+    /* border: 2px solid yellow; */
+    margin: 3rem 5rem;
+}
+.ourprint div:nth-child(1){
+    font-size:2rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.ourprint div:nth-child(2){
+    font-size:1.5rem;
+    color: rgb(56,74,98);
+    /* font-weight: bold; */
+    font-family: sans-serif;
+}
+.container4 div:nth-child(2) img{
+    margin-top: 2rem;
+}
