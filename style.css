@@ -51,12 +51,13 @@
     display: flex;
     justify-content:space-around;
     width: 100%;
-    padding: 0.5rem;
+    padding: 1.5rem;
 }
 .printivo .printivo__img li{
     list-style-type: none;
-    
-    
+}
+.printivo .printivo__img img{
+    width: 8rem;
 }
 .printivo .all__product1{
     display: flex;
@@ -92,12 +93,24 @@
 }
 .container2{
     display: flex;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+.menu{
+    background-color: white;
+    visibility: hidden;
+    width: 100px;
+    padding:1rem;
+    margin-left:2rem;
+    font-family: sans-serif;
+    font-size:1.5rem;
+    color:rgb(123,113,131);
 }
 .quality{
     flex-grow: 1;
     justify-content: center;
-    margin-left:50px;
+    margin-left:3rem;
+
 }
 .container2 .quality h1{
     color: rgb(56,74,98);
@@ -106,10 +119,10 @@
     font-weight: 400;
 }
 .container2 .quality .p1{
-color: rgb(112,128,149);
-font-weight: 500;
-font-size:1.8rem;
-padding-bottom:2rem;
+    color: rgb(112,128,149);
+    font-weight: 500;
+    font-size:1.8rem;
+    padding-bottom:2rem;
 }
 .container2 .quality .p2{
     color: rgb(56,74,98);
@@ -118,19 +131,20 @@ padding-bottom:2rem;
     font-weight:bold;
     font-family:sans-serif;
     }
+
 .hand{
-    width:30rem;
+    width:28rem;
 }
 .searchicon{
     background-color: white;
-    width:600px;
+    width:70%;
     height: 5rem;
     display: flex;
 }
 .searchicon input{
 outline: 0;
 border: 0;
-flex-grow: 1;
+flex-grow:1;
 font-size: 20px;
 padding-left: 1rem;
 }
@@ -143,6 +157,34 @@ padding-left: 1rem;
 }
 
 /* media query */
+@media screen and (max-width:940px){
+    .img__hand{
+        width: 22rem;
+    }
+    .hand{
+        width:22rem;
+    }
+    .container2{
+        margin-top: 0;
+    }
+    .container2 .quality h1{
+        font-size:3rem;
+    }
+    .quality{ 
+        margin-left:2rem;
+    
+    }
+    .menu{
+        background-color: white;
+        visibility: visible;
+        width: 100px;
+        padding:1rem;
+        margin-left:1rem;
+        font-family: sans-serif;
+        font-size:1.5rem;
+        color:rgb(123,113,131);
+    }
+}
 @media screen and (max-width:800px) {
     .container1 nav .cost__calculator {
         display: none;
@@ -153,16 +195,40 @@ padding-left: 1rem;
         justify-content: space-between;
 
     }
+    .printivo nav{
+        /* display: flex; */
+        justify-content:space-between;
+    }
     .printivo .all__product {
         display: none;
     }
     .printivo .sign__in :nth-child(1) a{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
 
     }
     .printivo .sign__in :nth-child(2) a{
         display: none;
     }
+    .printivo nav{
+        padding:0.8rem;
+    }
+    
+    .container2 .quality h1{
+        font-size:3rem;
+
+    }
+    .quality{
+        margin-left:1rem;
+    
+    }
+    .container2 .quality .p1{
+        font-weight: 400;
+        font-size:1.5rem;
+        padding: 1rem;
+    } 
+    .searchicon{
+        width:70%;
+
 }
 @media screen and (max-width:640px){
     .need__help1 span{
@@ -180,6 +246,28 @@ padding-left: 1rem;
         padding:.4rem;
         font-size: .8rem;
             }
+    .img__hand{
+        display: none;
+        /* width: 22rem; */
+    }
+    
+    }
+    .searchicon input{
+        width: 70%;
+        font-size:15px;
+        padding-left: 1rem;
+        }
+
+    .fa-magnifying-glass{
+        padding:1rem;
+        color: rgb(129,140,155);
+        cursor: pointer;
+    }
+    .container2 .quality .p2{
+        font-size:1rem;
+        font-weight: 500;
+        padding-top:5rem;
+        }
 }
 
 @media screen and (max-width:475px){
@@ -189,7 +277,11 @@ padding-left: 1rem;
     }
 
     .printivo .sign__in {
-        border: 2px solid rebeccapurple;
         gap: 1rem;
+    }
+    .searchicon{
+        font-size:1.5rem;
+        width:244px;
+
     }
 }
