@@ -268,6 +268,11 @@ padding-left: 1rem;
         font-weight: 500;
         padding-top:5rem;
         }
+    .menu{
+        width:90px;
+        padding:0.8rem;
+        font-family: sans-serif;
+    }
 }
 
 @media screen and (max-width:475px){
@@ -283,5 +288,24 @@ padding-left: 1rem;
         font-size:1.5rem;
         width:244px;
 
+    }
+    .container2 .quality h1{
+        padding-top: 0.5rem;
+        font-size:2rem;
+    }
+    .container2 .quality .p1{
+        font-size:1.2rem;
+        padding:0.2rem;
+    } 
+    .container2 .quality .p2{
+        font-size:1rem;
+        font-weight: 500;
+        padding-top:2.5rem;
+        }
+    .menu{
+        width: 80px;
+        padding:0.5rem;
+        font-size:1.2rem;
+        
     }
 }
